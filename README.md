@@ -1,2 +1,2 @@
 # MultiTenantChatApp
-# MultiTenantChatApp
+In this project we have made an android app that has features of Chat, Email and Forum. It is not just a simple app, it is an app where a single message and be represented using Chat UI, Email UI or Forum UI. In our app a user can sign up and while signing up he has to set his preference of UI. Thus a user selects Chat UI, Email UI or Forum UI based on his liking. Suppose a user selects Chat UI than it is not necessary that other user with whom he/she needs to communicate should also be on the chat UI. They can carry out conversation on any UI of their choice. We are storing data on Firebase Realtime Database.
