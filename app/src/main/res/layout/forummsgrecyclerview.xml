@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/forummsgcontainer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/forummsgsubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="subject"
+            android:padding="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/grey_500"
+            app:layout_constraintTop_toTopOf="@+id/forummsgcontainer"
+            app:layout_constraintStart_toStartOf="@+id/forummsgcontainer"
+            />
+
+        <TextView
+
+            android:id="@+id/forummsgtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textLongMessage"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/grey_800"
+            android:layout_marginStart="3dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/forummsgsubject"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:id="@+id/line11"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forummsgcontainer"
+        />
+</android.support.constraint.ConstraintLayout>

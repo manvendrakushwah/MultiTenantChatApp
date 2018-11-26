@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailPage"
+    android:padding="16dp"
+    >
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/fromspace"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From:  "
+            android:textColor="@color/grey_500"
+            android:textSize="16sp"
+            android:id="@+id/from"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="meet@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/grey_800"
+            android:id="@+id/emailpagefromemail"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/tospace"
+        app:layout_constraintTop_toBottomOf="@+id/fromspace">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:  "
+            android:textColor="@color/grey_500"
+            android:textSize="16sp"
+            android:id="@+id/to"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="meet@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/grey_800"
+            android:id="@+id/emailpagetoemail"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:id="@+id/line1"
+        app:layout_constraintTop_toBottomOf="@id/tospace"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_800"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/subjectspace"
+        app:layout_constraintTop_toBottomOf="@+id/line1">
+        <TextView
+            android:id="@+id/emailpagesubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toTopOf="@+id/line1"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/datespace"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Date:  "
+                android:id="@+id/datetitle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailpagedate"
+                android:text="25/11/2018"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:id="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@id/subjectspace"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_800"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2">
+        <TextView
+            android:id="@+id/emailpagemessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is the main message which is send by other person as of knpw we have not handeled sending media with chat and email but very soon we will include that too. "
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/emailpagereplybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/reply"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".ComposeEmail">
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:id="@+id/tospace">
+        <EditText
+            android:id="@+id/composeemailid"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="To"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/rule1"
+        app:layout_constraintTop_toBottomOf="@id/tospace"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_500"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:id="@+id/subjectspace"
+        app:layout_constraintTop_toBottomOf="@id/rule1">
+        <EditText
+            android:id="@+id/composeemailsubject"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Subject"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/rule2"
+        app:layout_constraintTop_toBottomOf="@id/subjectspace"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_500"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_height="500dp"
+        android:layout_width="match_parent"
+        android:id="@+id/composespace"
+        app:layout_constraintTop_toBottomOf="@id/rule2">
+
+        <EditText
+            android:id="@+id/composeemailtext"
+            app:layout_constraintTop_toBottomOf="@id/rule2"
+            android:hint="Compose Mail"
+            android:inputType="textMultiLine"
+            android:lines="15"
+            android:minLines="17"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/composeemailsendbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/sendwhite"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatlayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/chatmsgrecyclerview_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_shape_2"
+        android:text="hello"
+        android:visibility="invisible"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <TextView
+        android:id="@+id/chatmsgrecyclerview_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_shape_1"
+        android:text="hello"
+        android:textColor="#ffffff"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:visibility="invisible"
+        android:paddingRight="15dp"
+        android:layout_gravity="end"/>
+
+</FrameLayout>

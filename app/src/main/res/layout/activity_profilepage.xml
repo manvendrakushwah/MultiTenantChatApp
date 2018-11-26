@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilepage"
+    android:background="#ffffff"
+>
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:background="#F5f5f5"
+        android:layout_height="200dp"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_gravity="center"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:src="@drawable/default_avata"
+                android:background="#00000000"/>
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="32dp"
+                android:id="@+id/profileusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/rule1"
+        app:layout_constraintTop_toBottomOf="@id/profile"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_500"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/rule1"
+        android:id="@+id/email_item"
+        android:layout_width="match_parent"
+        android:background="@android:color/background_light"
+        android:layout_height="72dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.android.rivchat.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mail"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="16sp"
+            android:textColor="@color/grey_800"
+            android:layout_toRightOf="@+id/img_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:text="Email"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/email_detail"
+            android:textSize="14sp"
+            android:layout_below="@+id/tv_title"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/rule2"
+        app:layout_constraintTop_toBottomOf="@id/email_item"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_500"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        app:layout_constraintTop_toBottomOf="@id/rule2"
+        android:id="@+id/pass_item"
+        android:layout_width="match_parent"
+        android:background="@android:color/background_light"
+        android:layout_height="72dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.android.rivchat.MainActivity"
+        tools:showIn="@layout/activity_main"
+        android:clickable="true"
+        android:onClick="changepass">
+
+        <ImageView
+            android:id="@+id/pass_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pass"/>
+        <TextView
+            android:id="@+id/pass_title"
+            android:textSize="16sp"
+            android:textColor="@color/grey_800"
+            android:layout_toRightOf="@+id/pass_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:text="Change Password"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/rule3"
+        app:layout_constraintTop_toBottomOf="@id/pass_item"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_500"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/rule3"
+        android:id="@+id/signout_item"
+        android:layout_width="match_parent"
+        android:background="@android:color/background_light"
+        android:layout_height="72dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.android.rivchat.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <ImageView
+            android:id="@+id/signout_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_signut"/>
+        <TextView
+            android:id="@+id/signout_title"
+            android:textSize="16sp"
+            android:textColor="@color/grey_800"
+            android:layout_toRightOf="@+id/signout_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:text="Sign Out"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

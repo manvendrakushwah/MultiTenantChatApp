@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="input_email">Email</string>
+
+    <string name="input_password">Enter Password</string>
+    <string name="Login_button">Login</string>
+    <string name="Signup_button">Signup</string>
+
+    <string name="chat">chat</string>
+    <string name="forum">forum</string>
+    <string name="email">email</string>
+    <string name="logout">logout</string>
+
+</resources>
