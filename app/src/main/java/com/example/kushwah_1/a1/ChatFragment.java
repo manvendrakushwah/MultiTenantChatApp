@@ -28,8 +28,6 @@ import java.util.Map;
 import java.util.Random;
 
 public class ChatFragment extends Fragment {
-
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
